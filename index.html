@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm</title>
+    <link  href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-main">
+    <header>
+        <nav class="px-5 flex justify-between items-center bg-white ">
+            <div class="px-10 py-5 font-bold text-3xl">
+                <a href="#home">
+                    <span class="text-green-800">Farm</span>
+                </a>
+            </div>
+            
+            <div>
+                <ul class="hidden lg:flex items-center font-bold justify-center space-x-6"> 
+                  <li>
+                    <a href="#home" class="text-green-800 :bg-hover-text ease-in duration-200 px-4 py-2 rounded-md">Home</a>
+                  </li>
+                  <li>
+                    <a href="/pages/produce.html" class="text-green-800 :bg-hover-text ease-in duration-200 px-4 py-2 rounded-md">Produce</a>
+                  </li>
+                  <li>
+                    <a href="#contact" class="text-green-800 :bg-hover-text ease-in duration-200 px-4 py-2 rounded-md">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#contact" class="text-green-800 :bg-hover-text ease-in duration-200 px-4 py-2 rounded-md">About</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="px-10 py-5">
+                <div class="hidden lg:flex items-center justify-center space-x-6">
+                    <a href="/pages/login.html">
+                        <button class="text-white bg-green-800 px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">
+                        Login
+                        </button>
+                    </a>
+                    <a href="/pages/signup.html">
+                        <button class="text-white bg-green-800 px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">
+                        Signup
+                        </button>
+                    </a>
+                    <a href="/pages/cart.html"
+                         class="text-green-800 px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 flex items-center">
+                            <i class="fas fa-shopping-cart mr-2"></i>Cart </a>
+                        
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="bg-cover bg-center  opacity-100 bg-green-800">
+        <section id="hero">
+            <div class=" p-20">
+                <div class="flex flex-col  items-center justify-between z-20 md:flex-row">
+                    <div class="grid p-20">
+                        <div class="py-5">
+                            <h1 class="text-5xl font-medium text-white">"Fresh from the Farm to Your <br> Table  – Order Nature’s Best, <br> Delivered to  Your Doorstep!"</h1>
+                        </div>
+                        <div class="py-5 space-x-5">
+                            <button class="text-white border-solid border-2 border-button-main px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">Explore Fresh Produce</button>
+                        </div>
+                    </div>
+
+                    <div class="place-items-right px-5">
+                        <img src="./img/shop.svg" class="transform scale-x-[-1]" alt="" width="500" height="300">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <section class="py-10 bg-white">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 bg-green-100 rounded-lg shadow-md text-center">
+                    <i class="fas fa-check-circle text-4xl text-green-500 mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">Reliable</h2>
+                    <p>Count on us for consistent quality and service.</p>
+                </div>
+                <div class="p-6 bg-green-100 rounded-lg shadow-md text-center">
+                    <i class="fas fa-shipping-fast text-4xl text-green-500 mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">Fast Delivery</h2>
+                    <p>Quick and efficient delivery to your doorstep.</p>
+                </div>
+                <div class="p-6 bg-green-100 rounded-lg shadow-md text-center">
+                    <i class="fas fa-clock text-4xl text-green-500 mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">Timely</h2>
+                    <p>Always on time, every time.</p>
+                </div>
+                <div class="p-6 bg-green-100 rounded-lg shadow-md text-center">
+                    <i class="fas fa-lock text-4xl text-green-500 mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">Secured Payment</h2>
+                    <p>Safe and secure payment options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                    <div class="relative">
+                        <img src="./img/pepper.jpg" alt="Pepper" class="w-full h-48 object-cover mb-4 rounded-md">
+                        <hr class="my-2 border-t-1 border-gray-400 w-1/2 mx-auto">
+                        <span class="absolute top-0 right-0 bg-green-800 text-white text-xs font-bold px-2 py-1 rounded-bl-md">Available</span>
+                    </div>
+                    <h2 class="text-xl font-bold">Pepper</h2>
+                    
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                    <div class="relative">
+                        <img src="./img/tomatoes.webp" alt="tomatoes" class="w-full h-48  object-cover mb-4 rounded-md">
+                        <hr class="my-2 border-t-1 border-gray-400 w-1/2 mx-auto">
+
+                        <span class="absolute top-0 right-0 bg-red-800 text-white text-xs font-bold px-2 py-1 rounded-bl-md">Sold Out</span>
+                    </div>
+                    <h2 class="text-xl font-bold">Tomatoes</h2>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                    <div class="relative">
+                        <img src="./img/okra.png" alt="Pepper" class="w-full h-48 object-cover mb-4 rounded-md">
+                        <hr class="my-2 border-t-1 border-gray-400 w-1/2 mx-auto">
+
+                        <span class="absolute top-0 right-0 bg-red-800 text-white text-xs font-bold px-2 py-1 rounded-bl-md">Sold Out</span>
+                    </div>
+                    <h2 class="text-xl font-bold">Okra</h2>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                    <div class="relative">
+                        <img src="./img/maize.jpg" alt="Pepper" class="w-full h-48 object-cover mb-4 rounded-md">
+                        <hr class="my-2 border-t-1 border-gray-400 w-1/2 mx-auto">
+
+                        <span class="absolute top-0 right-0 bg-green-800 text-white text-xs font-bold px-2 py-1 rounded-bl-md">Available</span>
+                    </div>
+                    <h2 class="text-xl font-bold">Maize</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+</body>
+</html>

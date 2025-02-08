@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm</title>
+    <link  href="/src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-main">
+    <header>
+        <nav class="px-5 flex justify-between items-center bg-green-800 ">
+            <div class="px-10 py-5 font-bold text-3xl">
+                <a href="#home">
+                    <span class="text-white">Farm</span>
+                </a>
+            </div>
+            
+            <div>
+                <ul class="hidden lg:flex items-center font-bold justify-center space-x-6"> 
+                  <li>
+                    <a href="#home" class="text-white :bg-hover-text ease-in duration-200 px-4 py-2 rounded-md">Home</a>
+                  </li>
+                  <li>
+                    <a href="#about" class="text-white :bg-hover-text ease-in duration-200 px-4 py-2 rounded-md">Produce</a>
+                  </li>
+                  <li>
+                    <a href="#contact" class="text-white :bg-hover-text ease-in duration-200 px-4 py-2 rounded-md">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#contact" class="text-white :bg-hover-text ease-in duration-200 px-4 py-2 rounded-md">About</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="px-10 py-5">
+                <div class="hidden lg:flex items-center justify-center space-x-6">
+                    <a href="/pages/signin.html">
+                        <button class="text-white bg-gray-800 px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">
+                        Login
+                        </button>
+                    </a>
+                    <a href="/pages/signup.html">
+                        <button class="text-white bg-gray-800 px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">
+                        Signup
+                        </button>
+                    </a>
+                    <a href="/pages/cart.html"
+                         class="text-white px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 flex items-center">
+                            <i class="fas fa-shopping-cart mr-2"></i>Cart </a>
+                        
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="flex justify-center mt-10">
+        <input type="text" placeholder="Search for farm produce..." class="px-20 w-1/2 p-3 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-600">
+        <button class="bg-green-800 text-white px-5 py-3 rounded-r-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-600">
+            Search
+        </button>
+    </div>
+
+    <section class="container mx-auto py-10">
+        <div class="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="md:w-1/2 p-6">
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <img src="/img/tomatoes.webp" alt="Produce Image" class="w-full h-full object-cover rounded-md">
+                </div>
+            </div>
+            <div class="md:w-1/2 p-6">
+                <h2 class="text-3xl font-bold mb-4">Tomatoes</h2>
+                <p class="text-2xl text-gray-700 mb-4">Price: GHS 20.00</p>
+                <div class="flex items-center mb-4">
+                    <label for="size" class="mr-4">Size (kg):</label>
+                    <select id="size" class="border border-gray-300 rounded-md p-2">
+                        <option value="1">1 kg</option>
+                        <option value="2">2 kg</option>
+                        <option value="5">5 kg</option>
+                    </select>
+                </div>
+                <a href="/pages/checkout.html">
+                    <button class="bg-green-800 text-white px-5 py-3 rounded-md flex items-center hover:bg-green-700">
+                        <i class="fas fa-shopping-cart mr-2"></i> Add to Cart
+                    </button>
+                </a>
+                
+            </div>
+            <div class="md:w-1/2 p-6">
+                
+                <p class="text-gray-700 py-10 text-xl mb-4">Our farm-fresh tomatoes are grown organically and harvested at peak ripeness to ensure the best flavor and nutritional value. Perfect for salads, sauces, and cooking, these tomatoes are a staple in any kitchen.</p>
+                
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- add an add to cart section. the section should take half of the page and it should contain a section for image of the produce and where the user can increase the quantity of the produce and also the size in kilograms. the code should be in tailwind css -->
+    
+
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                    <div class="relative">
+                        <img src="/img/pepper.jpg" alt="Pepper" class="w-full h-48 object-cover mb-4 rounded-md">
+                        <hr class="my-2 border-t-1 border-gray-400 w-1/2 mx-auto">
+                        <span class="absolute top-0 right-0 bg-green-800 text-white text-xs font-bold px-2 py-1 rounded-bl-md">Available</span>
+                    </div>
+                    <h2 class="text-xl font-bold">Pepper</h2>
+                    <p class="text-gray-700 mt-2">Price: GHS 15.00</p>
+                    <p class="text-gray-500">Weight: 1kg</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                    <div class="relative">
+                        <img src="/img/tomatoes.webp" alt="tomatoes" class="w-full h-48  object-cover mb-4 rounded-md">
+                        <hr class="my-2 border-t-1 border-gray-400 w-1/2 mx-auto">
+                        <span class="absolute top-0 right-0 bg-red-800 text-white text-xs font-bold px-2 py-1 rounded-bl-md">Sold Out</span>
+                    </div>
+                    <h2 class="text-xl font-bold">Tomatoes</h2>
+                    <p class="text-gray-700 mt-2">Price: GHS 250.00</p>
+                    <p class="text-gray-500">Weight: 5kg</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                    <div class="relative">
+                        <img src="/img/okra.png" alt="Pepper" class="w-full h-48 object-cover mb-4 rounded-md">
+                        <hr class="my-2 border-t-1 border-gray-400 w-1/2 mx-auto">
+
+                        <span class="absolute top-0 right-0 bg-red-800 text-white text-xs font-bold px-2 py-1 rounded-bl-md">Sold Out</span>
+                    </div>
+                    <h2 class="text-xl font-bold">Okra</h2>
+                    <p class="text-gray-700 mt-2">Price: GHS 15.00</p>
+                    <p class="text-gray-500">Weight: 1kg</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                    <div class="relative">
+                        <img src="/img/maize.jpg" alt="Pepper" class="w-full h-48 object-cover mb-4 rounded-md">
+                        <hr class="my-2 border-t-1 border-gray-400 w-1/2 mx-auto">
+
+                        <span class="absolute top-0 right-0 bg-green-800 text-white text-xs font-bold px-2 py-1 rounded-bl-md">Available</span>
+                    </div>
+                    <h2 class="text-xl font-bold">Maize</h2>
+                    <p class="text-gray-700 mt-2">Price: GHS 15.00</p>
+                    <p class="text-gray-500">Weight: 1kg</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                    <div class="relative">
+                        <img src="/img/tomatoes.webp" alt="tomatoes" class="w-full h-48  object-cover mb-4 rounded-md">
+                        <hr class="my-2 border-t-1 border-gray-400 w-1/2 mx-auto">
+                        <span class="absolute top-0 right-0 bg-red-800 text-white text-xs font-bold px-2 py-1 rounded-bl-md">Sold Out</span>
+                    </div>
+                    <h2 class="text-xl font-bold">Tomatoes</h2>
+                    <p class="text-gray-700 mt-2">Price: GHS 250.00</p>
+                    <p class="text-gray-500">Weight: 5kg</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                    <div class="relative">
+                        <img src="/img/okra.png" alt="Pepper" class="w-full h-48 object-cover mb-4 rounded-md">
+                        <hr class="my-2 border-t-1 border-gray-400 w-1/2 mx-auto">
+
+                        <span class="absolute top-0 right-0 bg-red-800 text-white text-xs font-bold px-2 py-1 rounded-bl-md">Sold Out</span>
+                    </div>
+                    <h2 class="text-xl font-bold">Okra</h2>
+                    <p class="text-gray-700 mt-2">Price: GHS 15.00</p>
+                    <p class="text-gray-500">Weight: 1kg</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                    <div class="relative">
+                        <img src="/img/maize.jpg" alt="Pepper" class="w-full h-48 object-cover mb-4 rounded-md">
+                        <hr class="my-2 border-t-1 border-gray-400 w-1/2 mx-auto">
+
+                        <span class="absolute top-0 right-0 bg-green-800 text-white text-xs font-bold px-2 py-1 rounded-bl-md">Available</span>
+                    </div>
+                    <h2 class="text-xl font-bold">Maize</h2>
+                    <p class="text-gray-700 mt-2">Price: GHS 15.00</p>
+                    <p class="text-gray-500">Weight: 1kg</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                    <div class="relative">
+                        <img src="/img/pepper.jpg" alt="Pepper" class="w-full h-48 object-cover mb-4 rounded-md">
+                        <hr class="my-2 border-t-1 border-gray-400 w-1/2 mx-auto">
+                        <span class="absolute top-0 right-0 bg-green-800 text-white text-xs font-bold px-2 py-1 rounded-bl-md">Available</span>
+                    </div>
+                    <h2 class="text-xl font-bold">Pepper</h2>
+                    <p class="text-gray-700 mt-2">Price: GHS 15.00</p>
+                    <p class="text-gray-500">Weight: 1kg</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                    <div class="relative">
+                        <img src="/img/maize.jpg" alt="Pepper" class="w-full h-48 object-cover mb-4 rounded-md">
+                        <hr class="my-2 border-t-1 border-gray-400 w-1/2 mx-auto">
+
+                        <span class="absolute top-0 right-0 bg-green-800 text-white text-xs font-bold px-2 py-1 rounded-bl-md">Available</span>
+                    </div>
+                    <h2 class="text-xl font-bold">Maize</h2>
+                    <p class="text-gray-700 mt-2">Price: GHS 15.00</p>
+                    <p class="text-gray-500">Weight: 1kg</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                    <div class="relative">
+                        <img src="/img/pepper.jpg" alt="Pepper" class="w-full h-48 object-cover mb-4 rounded-md">
+                        <hr class="my-2 border-t-1 border-gray-400 w-1/2 mx-auto">
+                        <span class="absolute top-0 right-0 bg-green-800 text-white text-xs font-bold px-2 py-1 rounded-bl-md">Available</span>
+                    </div>
+                    <h2 class="text-xl font-bold">Pepper</h2>
+                    <p class="text-gray-700 mt-2">Price: GHS 15.00</p>
+                    <p class="text-gray-500">Weight: 1kg</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                    <div class="relative">
+                        <img src="/img/okra.png" alt="Pepper" class="w-full h-48 object-cover mb-4 rounded-md">
+                        <hr class="my-2 border-t-1 border-gray-400 w-1/2 mx-auto">
+
+                        <span class="absolute top-0 right-0 bg-red-800 text-white text-xs font-bold px-2 py-1 rounded-bl-md">Sold Out</span>
+                    </div>
+                    <h2 class="text-xl font-bold">Okra</h2>
+                    <p class="text-gray-700 mt-2">Price: GHS 15.00</p>
+                    <p class="text-gray-500">Weight: 1kg</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                    <div class="relative">
+                        <img src="/img/tomatoes.webp" alt="tomatoes" class="w-full h-48  object-cover mb-4 rounded-md">
+                        <hr class="my-2 border-t-1 border-gray-400 w-1/2 mx-auto">
+                        <span class="absolute top-0 right-0 bg-red-800 text-white text-xs font-bold px-2 py-1 rounded-bl-md">Sold Out</span>
+                    </div>
+                    <h2 class="text-xl font-bold">Tomatoes</h2>
+                    <p class="text-gray-700 mt-2">Price: GHS 250.00</p>
+                    <p class="text-gray-500">Weight: 5kg</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+   
+
+ghghhg
+
+
+
+
+
+
+
+
+
+
+   
+
+</body>
+</html>
