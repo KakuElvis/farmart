@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Single_product = () => {
   return (
@@ -21,11 +22,11 @@ const Single_product = () => {
                         <option value="5">5 kg</option>
                     </select>
                 </div>
-                <a href="/pages/checkout.html">
+                
                     <button class="bg-green-800 text-white px-5 py-3 rounded-md flex items-center hover:bg-green-700">
-                        <i class="fas fa-shopping-cart mr-2"></i> Add to Cart
+                        <Link to="/Checkout"><i class="fas fa-shopping-cart mr-2"></i> Add to Cart</Link>
                     </button>
-                </a>
+                
                 
             </div>
             <div class="md:w-1/2 p-6">

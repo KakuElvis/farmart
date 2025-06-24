@@ -5,7 +5,13 @@ const Contact = () => {
   return (
     <div>
       <Nav/>
-      <p>this is contact page</p>
+      <section className='bg-cover bg-center  opacity-100 bg-green-800 p-20'>
+            <div className='py-5 flex'>
+                <h1 className='text-white text-5xl'>Contact <strong>FarMart</strong></h1>
+                
+            </div>
+            
+        </section>
     </div>
   )
 }

@@ -19,8 +19,7 @@ const Products = () => {
                 <h2 class="text-xl font-bold">Pepper</h2>
                 <p class="text-gray-700 mt-2">Price: GHS 15.00</p>
                 <p class="text-gray-500">Weight: 1kg</p>
-                </Link>
-              {/* </a> */}
+              </Link>
             </div>
             <div class="p-6 bg-white rounded-lg shadow-md text-center">
               <div class="relative">

@@ -5,6 +5,8 @@ import Produce from './Pages/Produce';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Single_produce from './Pages/Single_produce';
+import Checkout from './Pages/Checkout';
+
 
 const App = () => {
   return (
@@ -27,6 +29,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/produce" element={<Produce />} />
         <Route path="/single_produce" element={<Single_produce />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </Router>
   </div>
