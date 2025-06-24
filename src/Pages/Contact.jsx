@@ -3,7 +3,10 @@ import Nav from '../components/Home/Nav'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <Nav/>
+      <p>this is contact page</p>
+    </div>
   )
 }
 
