@@ -6,6 +6,8 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Single_produce from './Pages/Single_produce';
 import Checkout from './Pages/Checkout';
+import Signup from './Pages/Signup';
+import Signin from './Pages/Signin';
 
 
 const App = () => {
@@ -30,6 +32,9 @@ const App = () => {
         <Route path="/produce" element={<Produce />} />
         <Route path="/single_produce" element={<Single_produce />} />
         <Route path="/checkout" element={<Checkout />} />
+
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/signin" element={<Signin />} />
       </Routes>
     </Router>
   </div>

@@ -29,7 +29,7 @@ return (
             </div>
             <div className="px-10 py-5">
                 <div className="hidden lg:flex items-center justify-center space-x-6">
-                    <Link to="/login">
+                    <Link to="/signin">
                         <button className="text-white bg-green-800 px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">
                         Login
                         </button>
