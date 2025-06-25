@@ -25,14 +25,18 @@ const App = () => {
       </div> */}
 
       <Routes>
+        {/* navbar links */}
         <Route index element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/produce" element={<Produce />} />
+
+        {/* product links */}
         <Route path="/single_produce" element={<Single_produce />} />
         <Route path="/checkout" element={<Checkout />} />
 
+        {/* signup and signin links */}
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
       </Routes>
